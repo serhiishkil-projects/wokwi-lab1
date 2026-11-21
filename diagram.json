@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Serhii Shkil",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 40, "left": 0, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r1", "top": 100, "left": 340, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "led1", "top": 82, "left": 470, "attrs": { "color": "red", "label": "LED D8" } }
+  ],
+  "connections": [
+    [ "uno:8", "r1:1", "green", [] ],
+    [ "r1:2", "led1:A", "green", [] ],
+    [ "led1:C", "uno:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
